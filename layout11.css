@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+#wrap {
+    width: 600px;
+    margin: 10px;
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(1fr, 1fr);
+    grid-template-rows: 100px 200px 200px 50px;
+    grid-template-areas:
+    "box1 box1"
+    "box2 box2"
+    "box3 box4"
+    "box5 box5"
+    ;
+}
+header {
+    border: 1px solid navy;
+    background: gray;
+    grid-area: box1;
+}
+nav {
+    border: 1px solid navy;
+    background: plum;
+    width: 350px;
+    height: 80px;
+    margin: 7px 0 0 7px;
+}
+main {
+    border: 1px solid navy;
+    background: green;
+    grid-area: box2;
+}
+section {
+    border: 1px solid navy;
+    grid-area: box3;
+}
+article {
+    border: 1px solid navy;
+    grid-area: box4;
+}
+footer {
+    border: 1px solid navy;
+    grid-area: box5;
+}
